@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SMS - Django</title>
+  <style media="screen">
+    .classroom {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .classroom h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+    body{
+        overflow-y: hidden;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  {% include "navbar.html" %}
+
+  {%block content%}
+  
+  {%endblock content%}
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{% extends 'homebase.html' %}
+{% block content %}
+
+{% load static %}
+<style>
+    .classroom {
+        position: relative;
+        top: 200px;
+        font-weight: bold;
+        color: white;
+    }
+    body{
+        background: url('{% static "img/studentlog.gif" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .lead{
+        font-weight: bold;
+
+    }
+</style>
+
+<div class="classroom" style="margin-bottom:0px;">
+  <h1 class="display-4">Student Login Panel</h1>
+  <p class="lead">Welcome to School Management System.</p>
+  <br>
+  <p>Please select any to contiue...</p>
+  <p class="lead">
+    <a class="btn btn-danger btn-lg" href="studentsignup" role="button">New Admission</a>
+    <a class="btn btn-success btn-lg" href="studentlogin" role="button">Login</a>
+  </p>
+</div>
+
+{% endblock content %}

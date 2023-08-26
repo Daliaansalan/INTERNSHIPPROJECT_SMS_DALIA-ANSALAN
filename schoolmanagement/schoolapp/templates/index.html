@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style media="screen">
+    .classroom {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: url('{% static "img/intro.gif" %}');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .classroom h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 3px 3px 16px #E96479;
+
+  }
+
+  .alert {
+    margin: 0px;
+  }
+
+
+
+  .glow {
+    font-size: 90px;
+    color: #ffffff;
+    text-align: center;
+    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; */
+    text-transform: uppercase;
+    position: relative;
+    top: 100px;
+    right: 15px;
+  }
+  .text-center{
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    top: 80px;
+    right: 5px;
+    font-weight: bold;
+  }
+  .btn{
+    text-transform: uppercase;
+    box-shadow: 3px 3px 20px #99e964;
+    font-weight: bold;
+    animation-name: bounce;
+    animation-duration: 5s ;
+    /* animation: bounce 5s linear 3s infinite ; */
+    position: relative;
+    left: 100px;
+  }
+  @keyframes bounce{
+    100% {
+        left: 100px;
+    }
+    50% {
+        left:  200px;
+    }
+    
+  }
+</style>
+</head>
+<body>
+    {% include "navbar.html" %}
+    <br><br>
+    <div class="classroom">
+        <br>
+        <br><br>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p><a class="btn btn-outline-warning btn-sm" href="/studentsignup">sign up as student</a></p>
+        <p><a class="btn btn-outline-warning btn-sm" href="/teachersignup">sign up as teacher</a></p>
+
+        <br><br>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    {% include "admin_teacher_student_card.html" %}
+
+
+    <br><br><br><br><br><br>
+    {% include "footer.html" %}
+</body>
+</html>

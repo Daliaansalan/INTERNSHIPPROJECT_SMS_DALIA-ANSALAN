@@ -1,0 +1,4 @@
+ pip install django-widget-tweaks
+ 
+ The Django widget tweaks is used to render form fields in templates. This allows you to adjust the properties of the form (such as method and CSS class) 
+ on the back-end without rewriting the template.

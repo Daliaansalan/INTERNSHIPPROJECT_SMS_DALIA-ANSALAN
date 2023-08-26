@@ -1,0 +1,34 @@
+{% extends 'homebase.html' %}
+{% block content %}
+
+{% load static %}
+
+<style>
+    .classroom {
+        position: relative;
+        top: 200px;
+        font-weight: bold;
+    }
+    body{
+        background: url('{% static "img/teacherlog.gif" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .lead{
+        font-weight: bold;
+
+    }
+</style>
+
+<div class="classroom" style="margin-bottom:0px;">
+  <h1 class="display-4">Teacher Login Panel</h1>
+  <p class="lead">Welcome to School Management System.</p>
+  <p>Please select any to contiue...</p>
+  <br>
+  <p class="lead">
+    <a class="btn btn-danger btn-lg" href="teachersignup" role="button">Apply Now</a>
+    <a class="btn btn-success btn-lg" href="teacherlogin" role="button">Login</a>
+  </p>
+</div>
+{% endblock content %}
+
